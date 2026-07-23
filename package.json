@@ -1,0 +1,12 @@
+{
+  "name": "santehub-kz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SantehHUB — static marketing site",
+  "scripts": {
+    "start": "serve -n . -l $PORT"
+  },
+  "dependencies": {
+    "serve": "^14.2.3"
+  }
+}
