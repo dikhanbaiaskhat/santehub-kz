@@ -342,11 +342,14 @@ section { position: relative; }
 
 /* Services */
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 .service-card {
+  flex: 1 1 340px;
+  max-width: 380px;
   background: var(--black-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -405,11 +408,14 @@ section { position: relative; }
 
 /* Partners */
 .partners-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 .partner-logo {
+  flex: 1 1 180px;
+  max-width: 220px;
   aspect-ratio: 16 / 9;
   background: #ffffff;
   border: 1px solid var(--border);
@@ -420,7 +426,28 @@ section { position: relative; }
   color: var(--grey);
   font-size: 13px;
   text-align: center;
-  padding: 10px;
+  padding: 16px;
+}
+.partner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.partner-logo--group {
+  flex: 1 1 300px;
+  max-width: 360px;
+  aspect-ratio: auto;
+  min-height: 124px;
+  gap: 14px;
+}
+.partner-logo--group img { max-height: 62%; }
+.partner-logo__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #b3232b;
+  white-space: nowrap;
 }
 
 /* Why us */
@@ -826,8 +853,6 @@ section { position: relative; }
   .burger { display: flex; }
   .hero__inner { grid-template-columns: 1fr; }
   .hero__visual { order: -1; max-width: 340px; margin: 0 auto 20px; }
-  .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .partners-grid { grid-template-columns: repeat(3, 1fr); }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
   .process-list { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; }
@@ -842,8 +867,7 @@ section { position: relative; }
 @media (max-width: 640px) {
   .section { padding: 64px 0; }
   .header__phone, .lang-switch { display: none; }
-  .services-grid, .why-grid, .process-list { grid-template-columns: 1fr; }
-  .partners-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid, .process-list { grid-template-columns: 1fr; }
   .review-card { flex-basis: 260px; }
   .reviews-head-row { align-items: flex-start; }
   .footer__top { grid-template-columns: 1fr; gap: 28px; }
