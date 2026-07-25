@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ? 'Сәлем! Менің атым ' + name + '. Телефон: ' + phone + (message ? '. Сұрақ: ' + message : '') + '. Кері байланыс сұраймын.'
         : 'Здравствуйте! Меня зовут ' + name + '. Телефон: ' + phone + (message ? '. Вопрос: ' + message : '') + '. Прошу перезвонить.';
 
-      var waNumber = form.getAttribute('data-whatsapp') || '77476840177';
+      var waNumber = form.getAttribute('data-whatsapp') || '77786756341';
       var url = 'https://wa.me/' + waNumber + '?text=' + encodeURIComponent(text);
       window.open(url, '_blank');
     });
