@@ -433,24 +433,6 @@ section { position: relative; }
   max-height: 100%;
   object-fit: contain;
 }
-.partner-logo--group {
-  flex: 1 1 300px;
-  max-width: 360px;
-  aspect-ratio: auto;
-  min-height: 124px;
-  gap: 10px 14px;
-  flex-wrap: wrap;
-  row-gap: 6px;
-}
-.partner-logo--group img { max-height: 48%; }
-.partner-logo__text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  color: #b3232b;
-  white-space: nowrap;
-}
 
 /* Why us */
 .why-grid {
