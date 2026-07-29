@@ -390,7 +390,7 @@ section { position: relative; }
 .about-visual svg { width: 46%; }
 .about-metrics {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 32px;
 }
@@ -437,7 +437,7 @@ section { position: relative; }
 /* Why us */
 .why-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
