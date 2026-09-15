@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://santehub.kz/sitemap.xml
+Sitemap: https://santehhub.online/sitemap.xml
